@@ -1,0 +1,15 @@
+# Site settings
+title: aijinsong
+email: imail@aijinsong.com
+qq: 1820019218
+description: > # this means to ignore newlines until "baseurl:"
+  第一个喜欢的测试数据是：我的家在东北！实际上我是湖北人。
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://aijs.github.io/" # the base hostname & protocol for your site
+twitter_username: 
+github_username:  aijinsong
+zhihu_username: aijinsong
+pages: tech caprice about
+
+# Build settings
+markdown: redcarpet

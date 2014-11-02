@@ -1,18 +1,31 @@
 ---
 layout: default
-title: 我的Blog
 ---
 
-<h2>{{ page.title }}</h2>
+<div class="home">
 
-<p>最新文章</p>
+  <h1 class="page-heading">文章汇总</h1>
 
-<ul>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-{% for post in site.posts %}
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <p>{{post.content}}</p>
+      </li>
+    {% endfor %}
+  </ul>
 
+<<<<<<< Updated upstream
 <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}/blog{{ post.url }}">{{ post.title }}</a></li>
 
 {% endfor %}
 
 </ul>
+=======
+
+</div>
+>>>>>>> Stashed changes
